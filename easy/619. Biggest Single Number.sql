@@ -1,6 +1,0 @@
-SELECT num
-FROM number_619
-GROUP BY num
-HAVING COUNT(num) = 1
-ORDER BY num DESC
-LIMIT 1;
