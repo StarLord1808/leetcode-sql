@@ -1,60 +1,50 @@
+# LeetCode SQL Questions and Solutions
 
-# Leetcode SQL Questions & Solutions <br/>
+![LeetCode SQL](https://github.com/cM2908/leetcode-sql/blob/main/LeetCode.png)
 
-![alt text](https://github.com/cM2908/leetcode-sql/blob/main/LeetCode.png)
+This repository contains LeetCode SQL solutions organized by difficulty and documented as Markdown files.
 
-#### Repository Contains :<br/>
+## Repository Structure
 
-(1) All Leetcode SQL Question Solutions <br/>
-(2) PostgreSQL Dump File (leetcodedb.sql)<br/>
+- `easy/`
+- `medium/`
+- `hard/`
 
-#### Problem statements of all questions including leetcode premium questions :<br/>
+Each solution file is named with the LeetCode question number and title, for example:
 
-(1) https://leetcode.ca <br/>
-(2) https://lifewithdata.com/sql <br/>
-(3) https://www.jiakaobo.com/leetcode <br/>
+- `easy/1050. Actors and Directors Who Cooperated At Least Three Times.md`
+- `medium/176. Second Highest Salary.md`
+- `hard/262. Trips and Users.md`
 
-#### How to Import dump file using command line terminal?<br/>
+## What Each Solution Includes
 
-(1) Open terminal & open psql utility
-```
-user@my-machine:~$ psql
-```
-(2) Create Database (To import the dump file, database should be created priorly)<br/>
-```
-postgres=# CREATE DATABASE sample_db;
-```
-(3) Quit the psql promt
-```
-postgres=# \q
-```
-(4) From terminal, Load dump file into the newly created database using below command
-```
-user@my-machine:~$ pg_restore --host "127.0.0.1" --port "5432" --username "postgres" --dbname "sample_db" --verbose "leetcodedb.sql"
-```
-Replace your configurations(host,port,username) in pg_restore command<br/>
+Each Markdown solution document typically contains:
 
-#### How to Import dump file using PgAdmin tool?<br/><br/>
+- the LeetCode problem link
+- the problem description
+- table schema details
+- sample input and expected output
+- the SQL solution
+- a short breakdown of the query logic
 
-(1) Open PgAdmin & Create Database
-```
-Servers -> Databases -> Create -> Database.. (Create Database dialog will get opened)
-```
-(2) Restore Dump File<br/>
-```
-Right Click on newly created Database & select Restore option from menu (Restore dialog will get opened)
-```
-Just Browse the dump file and keep other options as it is.
+## Problem Statement References
 
-#### Notes : <br/>
+Problem statements, including premium questions, can be referenced from:
 
-(1) Do not just copy-paste and run the content of dump file into either "psql promt in terminal" or "query tool of pgadmin".<br/>
-   (Because dump file contains COPY commands not INSERTS,So doing such will cause errors.)<br/>
-(2) Table names are suffixed with question number.<br/>
-(3) New solutions will get added as I solve them.<br/>
+1. https://leetcode.ca
+2. https://lifewithdata.com/sql
+3. https://www.jiakaobo.com/leetcode
 
-#### Checkout my another repository which cantains Miscellaneous SQL Questions & Solutions : <br/>
+## Notes
+
+1. Table names in the SQL queries are suffixed with the question number.
+2. The repository is now documentation-oriented, so solutions are stored as `.md` files instead of standalone `.sql` files.
+3. New solutions can be added in the same Markdown format as more problems are covered.
+
+## Other Resources
+
+Miscellaneous SQL repository:
 https://github.com/cM2908/misc-sql
 
-#### Checkout my Blogs on interesting SQL topics : <br/>
+SQL blog:
 http://chintan-sql.blogspot.com
